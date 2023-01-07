@@ -1,0 +1,28 @@
+{
+    "version": "3.0.504",
+    "description": "In-memory data structure store, used as a database, cache and message broker.",
+    "homepage": "https://github.com/MicrosoftArchive/redis",
+    "license": "BSD-3-Clause",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/microsoftarchive/redis/releases/download/win-3.0.504/Redis-x64-3.0.504.zip",
+            "hash": "5f761367601ca31f6c8969e427cacc0da4f428712954a66aab303f83e390566e"
+        }
+    },
+    "bin": [
+        "redis-benchmark.exe",
+        "redis-check-aof.exe",
+        "redis-cli.exe",
+        "redis-server.exe"
+    ],
+    "checkver": {
+        "github": "https://github.com/MicrosoftArchive/redis"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/MicrosoftArchive/redis/releases/download/v$version/Redis-x64-$version.zip"
+            }
+        }
+    }
+}
